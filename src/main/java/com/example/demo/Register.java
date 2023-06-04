@@ -9,11 +9,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class Register {
   
-  @GetMapping("/")
+  @GetMapping("/view")
   public String start() {
-    return "view.html";
+	  return "view.html";
   }
 
+  
   @PostMapping("/register")
   public ModelAndView register
     (@ModelAttribute RegisterBean rb, ModelAndView mav) {
