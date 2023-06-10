@@ -2,13 +2,16 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>登録画面</title>
 </head>
 <body>
-<h2>姓</h2>
-<h1 th:text="${rb.fname}"></h1>
-<h2>名</h2>
-<h1 th:text="${rb.name}"></h1>
-<a href="/">ホームページへ戻る</a>
+<h1>登録情報を入力してください</h1>
+	<form action="/register_result" method="post">
+	<input type ="text" name="fname"><br><br>
+	<input type ="text" name="name"><br><br>
+	<input type="submit" value="登録">
+	</form>
+	<br>
+	<a href="/">ホームページへ戻る</a>
 </body>
 </html>
